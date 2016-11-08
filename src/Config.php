@@ -27,7 +27,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     
     $redirectConfig = array(
-        'client_id' 	=> 'YOUR-CLIENT-ID',
+        'client_id' 	=> getenv('google_client_id'),
         'redirect_uri' 	=> 'http://yourdomain.com/oAuthRedirect.php',
         'response_type' => 'code',
         'scope'         => 'https://www.googleapis.com/auth/cloudprint',
@@ -35,8 +35,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     
     $authConfig = array(
         'code' => '',
-        'client_id' 	=> 'YOUR-CLIENT-ID',
-        'client_secret' => 'YOUR-CLIENT-SECRET',
+        'client_id' 	=> getenv('google_client_id'),
+        'client_secret' => getenv('google_client_secret'),
         'redirect_uri' 	=> 'http://yourdomain.com/oAuthRedirect.php',
         "grant_type"    => "authorization_code"
     );
