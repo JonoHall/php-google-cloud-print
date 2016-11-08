@@ -1,9 +1,9 @@
 {
     "name": "JonoHall/php-google-cloud-print",
     "description": "A Laravel wrapper for Google Cloud Print",
-    "license": "MIT",,
+    "license": "MIT",
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.4.0"
     },
     "autoload": {
         "psr-0": {
